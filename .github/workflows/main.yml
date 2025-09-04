@@ -1,0 +1,15 @@
+name: Start Windows Cloud PC
+workflow dispatch:
+Jobs:
+
+run-windows-cloud:
+runs-en: ubuntu-latest
+steps:
+name: Checkout repository
+uses: actions/checkout@v4
+name: Run Windows Cloud PC script
+run: 1
+bash .github/workflows/Windows Cloud PC-Anydesk.yml
+name: Keep runner alive
+
+run: sleep infinity
